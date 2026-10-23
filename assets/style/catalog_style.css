@@ -1,0 +1,14 @@
+input[name="f"] { 
+  display: none; 
+}
+
+#horror:checked ~ .catalog_game:not(.horror) { display: none; }
+#shooter:checked ~ .catalog_game:not(.shooter) { display: none; }
+#sandbox:checked ~ .catalog_game:not(.sandbox) { display: none; }
+#educational:checked ~ .catalog_game:not(.educational) { display: none; }
+#rpg:checked ~ .catalog_game:not(.rpg) { display: none; }
+#roguelike:checked ~ .catalog_game:not(.roguelike) { display: none; }
+
+.catalog-filters label { 
+  cursor: pointer; 
+}

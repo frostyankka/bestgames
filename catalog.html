@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="assets/style/catalog_style.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""><img class="logo" src="assets/img/placeholder.png" alt="logo"></a></li>
+                <li><a href="#search-section">Поиск</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="login.html">Войти</a></li>
+                <li><a href="profile.html"><img class="personal_account" src="assets/img/profile.png"
+                            alt="personal account"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+  <!-- Каталог игр -->
+  
+  <!-- Блок фильтрации (Пункт 5 ТЗ) -->
+  <aside class="catalog-filters">
+    <h3>Фильтр по жанрам</h3>
+    <ul>
+      <li><label for="all">Все</label></li>
+      <li><label for="horror">Хоррор</label></li>
+      <li><label for="shooter">Top-down shooter</label></li>
+      <li><label for="sandbox">Песочница</label></li>
+      <li><label for="educational">Образовательный</label></li>
+      <li><label for="rpg">RPG</label></li>
+      <li><label for="roguelike">Рогалик</label></li>
+    </ul>
+  </aside>
+
+  <section class="catalog">
+    <!-- Скрытые переключатели -->
+    <input type="radio" name="f" id="all" checked>
+    <input type="radio" name="f" id="horror">
+    <input type="radio" name="f" id="shooter">
+    <input type="radio" name="f" id="sandbox">
+    <input type="radio" name="f" id="educational">
+    <input type="radio" name="f" id="rpg">
+    <input type="radio" name="f" id="roguelike">
+
+    <!-- Карточки популярных игр-->
+    
+    <!-- Doors -->
+    <article class="catalog_game horror">
+      <img src="assets/img/placeholder.png" alt="game">
+      <p>Doors</p>
+      <a href="">Хоррор</a>
+      <p>LSPlash</p>
+      <p>★★★★★</p>
+      <p>1000₽</p>
+      <a href="">Подробнее</a>
+    </article>
+
+    <!-- Hotline Miami -->
+    <article class="catalog_game shooter">
+      <img src="assets/img/placeholder.png" alt="game">
+      <p>Hotline Miami</p>
+      <a href="">top-down shooter</a>
+      <p>Dennaton Games</p>
+      <p>★★★★★</p>
+      <p>100₽</p>
+      <a href="">Подробнее</a>
+    </article>
+
+    <!-- Minecraft -->
+    <article class="catalog_game sandbox">
+      <img src="assets/img/placeholder.png" alt="game">
+      <p>Minecraft</p>
+      <a href="">Песочница</a>
+      <p>Mojang</p>
+      <p>★★★★★</p>
+      <p>2000₽</p>
+      <a href="">Подробнее</a>
+    </article>
+
+    <!-- Dandy`s world -->
+    <article class="catalog_game horror">
+      <img src="assets/img/placeholder.png" alt="game">
+      <p>Dandy`s world</p>
+      <a href="">Хоррор</a>
+      <p>BlushCrunch</p>
+      <p>★★★★★</p>
+      <p>1000₽</p>
+      <a href="">Подробнее</a>
+    </article>
+
+    <!-- Основы CSS -->
+    <article class="catalog_game educational">
+      <img src="assets/img/placeholder.png" alt="game">
+      <p>Основы CSS: Интерактивное обучение</p>
+      <a href="">Образовательный</a>
+      <p>frostyankka</p>
+      <p>★★★★★</p>
+      <p>5000₽</p>
+      <a href="">Подробнее</a>
+    </article>
+
+    <!-- Cult of the lamb -->
+    <article class="catalog_game roguelike">
+      <img src="assets/img/placeholder.png" alt="game">
+      <p>Cult of the lamb</p>
+      <a href="">Рогалик</a>
+      <p>Massive Monster</p>
+      <p>★★★★★</p>
+      <p>500₽</p>
+      <a href="">Подробнее</a>
+    </article>
+
+    <!-- Undertale -->
+    <article class="catalog_game rpg">
+      <img src="assets/img/placeholder.png" alt="game">
+      <p>Undertale</p>
+      <a href="">RPG</a>
+      <p>Toby Fox</p>
+      <p>★★★★★</p>
+      <p>50₽</p>
+      <a href="">Подробнее</a>
+    </article>
+
+    <!-- FNaF -->
+    <article class="catalog_game horror">
+      <img src="assets/img/placeholder.png" alt="game">
+      <p>FNaF</p>
+      <a href="">Хоррор</a>
+      <p>Scott Cowtan</p>
+      <p>★★★★★</p>
+      <p>100₽</p>
+      <a href="">Подробнее</a>
+    </article>
+
+  </section>
+</main>
+
+    <!-- Подвал сайта -->
+        <footer>
+        <nav>
+            <ul class="footer-contacts">
+                <li><a href="tel:88005553535">Телефон (8-800-555-35-35)</a></li>
+                <li><a href="mailto:best@games.ru">e-mail: best@games.ru</a></li>
+                <li><a href="#">Клиентам</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li class="footer-nav-title">
+                    Навигация по сайту:
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="register.html">Регистрация</a></li>
+                        <li><a href="login.html">Авторизация</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                        <li><a href="#search-section">Поиск</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

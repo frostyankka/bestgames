@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/index_style.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""><img class="logo" src="assets/img/logo.svg" alt="logo"></a></li>
+                <li><a href="#search-section">Поиск</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="login.html">Войти</a></li>
+                <li><a href="profile.html"><img class="personal-account" src="assets/img/profile.png"
+                            alt="personal account"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Слайдер -->
+        <section class="slider">
+            <!-- Переключатели слайдов -->
+            <input type="radio" name="slider" id="slide-1" class="slider_input" checked>
+            <input type="radio" name="slider" id="slide-2" class="slider_input">
+            <input type="radio" name="slider" id="slide-3" class="slider_input">
+
+            <article class="slider_slides slide-1">
+                <img src="assets/img/fnaf.png" alt="game1">
+                <p>FNaF</p>
+                <p>1000р</p>
+                <a href="">Подробнее</a>
+            </article>
+            <article class="slider_slides slide-2">
+                <img src="assets/img/cultofthelamb.png" alt="game2">
+                <p>Cult of the lamb</p>
+                <p>500р</p>
+                <a href="">Подробнее</a>
+            </article>
+            <article class="slider_slides slide-3">
+                <img src="assets/img/undertale.png" alt="game3">
+                <p>Undertale</p>
+                <p>50р</p>
+                <a href="">Подробнее</a>
+            </article>
+            <!-- Точки переключатели -->
+            <article class="slider_radiobuttons">
+                <label for="slide-1"></label>
+                <label for="slide-2"></label>
+                <label for="slide-3"></label>
+            </article>
+        </section>
+        <!-- Поиск по категориям -->
+        <section class="find">
+            <form action="catalog.html" method="get" id="search-section" class="find_form">
+                <input type="text" name="genre" placeholder="Введите жанр" list="genres-list">
+                <button type="submit"><img src="assets/img/magnifying.png" alt="search_button"></button>
+                <!-- Список подсказок -->
+                <datalist id="genres-list">
+                    <option value="Хоррор">
+                    <option value="Top-down shooter">
+                    <option value="Песочница">
+                    <option value="Образовательный">
+                    <option value="RPG">
+                    <option value="Рогалик">
+                </datalist>
+            </form>
+        </section>
+        <!-- Преимущества -->
+        <section class="advantages">
+            <article class="advantages_advantage">
+                <ul>
+                    <li><img src="assets/img/advantage1.png" alt="advantage">
+                        <p>Привлекательные цены</p>
+                    </li>
+                    <li><img src="assets/img/advantage2.png" alt="advantage">
+                        <p>Ежемесячные акции</p>
+                    </li>
+                    <li><img src="assets/img/advantage3.png" alt="advantage">
+                        <p>Круглосуточная поддержка</p>
+                    </li>
+                    <li><img src="assets/img/advantage4.png" alt="advantage">
+                        <p>Быстрая покупка</p>
+                    </li>
+                </ul>
+        </section>
+        <!-- Популярные игры -->
+        <section class="fabulousgames">
+            <article class="fabulousgame_game">
+                <img src="assets/img/doors.png" alt="game">
+                <p>Doors</p>
+                <!-- по ссылке переход в каталог соотв жанру -->
+                <a href="">Хоррор</a>
+                <p>LSPlash</p>
+                <p>★★★★★</p>
+                <p>1000</p>
+                <a href=""><button>Каталог</button></a>
+            </article>
+            <article class="fabulousgame_game">
+                <img src="assets/img/hotlinemiami.png" alt="game">
+                <p>Hotline Miami</p>
+                <!-- по ссылке переход в каталог соотв жанру -->
+                <a href="">top-down shooter</a>
+                <p>Dennaton Games</p>
+                <p>★★★★★</p>
+                <p>100</p>
+                <a href=""><button>Каталог</button></a>
+            </article>
+            <article class="fabulousgame_game">
+                <img src="assets/img/minecraft.png" alt="game">
+                <p>Minecraft</p>
+                <!-- по ссылке переход в каталог соотв жанру -->
+                <a href="">Песочница</a>
+                <p>Mojang</p>
+                <p>★★★★★</p>
+                <p>2000</p>
+                <a href=""><button>Каталог</button></a>
+            </article>
+            <article class="fabulousgame_game">
+                <img src="assets/img/dandysworld.png" alt="game">
+                <p>Dandy`s world</p>
+                <!-- по ссылке переход в каталог соотв жанру -->
+                <a href="">Хоррор</a>
+                <p>BlushCrunch</p>
+                <p>★★★★★</p>
+                <p>1000</p>
+                <a href=""><button>Каталог</button></a>
+            </article>
+            <article class="fabulousgame_game">
+                <img src="assets/img/css.png" alt="game">
+                <p>Основы CSS: Интерактивное обучение</p>
+                <!-- по ссылке переход в каталог соотв жанру -->
+                <a href="">Образовательный</a>
+                <p>frostyankka</p>
+                <p>★★★★★</p>
+                <p>5000</p>
+                <a href=""><button>Каталог</button></a>
+            </article>
+        </section>
+        <!-- Наши партнеры -->
+        <section class="partners">
+            <h3>Наши партнеры</h3>
+            <article class="partners_partner">
+                <img src="assets/img/partner1.png" alt="partner">
+            </article>
+            <article class="partners_partner">
+                <img src="assets/img/partner2.png" alt="partner">
+            </article>
+            <article class="partners_partner">
+                <img src="assets/img/partner3.png" alt="partner">
+            </article>
+        </section>
+    </main>
+    <!-- Подвал сайта -->
+    <footer>
+        <nav>
+            <ul class="footer-contacts">
+                <li><a href="tel:88005553535">Телефон (8-800-555-35-35)</a></li>
+                <li><a href="mailto:best@games.ru">e-mail: best@games.ru</a></li>
+                <li><a href="#">Клиентам</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li class="footer-nav-title">
+                    Навигация по сайту:
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="register.html">Регистрация</a></li>
+                        <li><a href="login.html">Авторизация</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                        <li><a href="#search-section">Поиск</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

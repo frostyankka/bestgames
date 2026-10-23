@@ -1,0 +1,76 @@
+/* Слайдер */
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 7px;
+}
+
+.slider_slides img {
+    height: 500px;
+    width: 500px;
+}
+
+.slider_input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.slider_slides {
+    display: none;
+    text-align: center;
+}
+
+#slide-1:checked~.slide-1,
+#slide-2:checked~.slide-2,
+#slide-3:checked~.slide-3 {
+    display: block;
+}
+
+.slider_radiobuttons label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+}
+
+#slide-1:checked~.slider_radiobuttons label[for="slide-1"],
+#slide-2:checked~.slider_radiobuttons label[for="slide-2"],
+#slide-3:checked~.slider_radiobuttons label[for="slide-3"] {
+    background: #290671;
+}
+
+/* Поиск по жанрам */
+.find {
+    display: flex;
+    align-items: center;
+}
+
+.find img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Преимущества */
+.advantages img {
+    height: 100px;
+    width: 100px;
+}
+
+/* Популярные игры */
+.fabulousgames img{
+    height: 100px;
+    width: 100px;
+}
+
+/* Наши партнеры */
+.partners img {
+    height: 100px;
+    width: 100px;
+}
